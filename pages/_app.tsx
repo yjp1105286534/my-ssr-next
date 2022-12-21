@@ -35,14 +35,14 @@ export function reportWebVitals(mertic: any) {
       break;
   }
 
-  const body = JSON.stringify(mertic);
-  const url = 'https://xxxx.com';
+  // const body = JSON.stringify(mertic);
+  // const url = 'https://xxxx.com';
 
-  if (navigator.sendBeacon) {
-    navigator.sendBeacon(url, body);
-  } else {
-    fetch(url, { body, method: 'POST', keepalive: true })
-  }
+  // if (navigator.sendBeacon) {
+  //   navigator.sendBeacon(url, body);
+  // } else {
+  //   fetch(url, { body, method: 'POST', keepalive: true })
+  // }
 }
 function MyApp({ initialValue, Component, pageProps }: IProps) {
   const renderLayout = () => {

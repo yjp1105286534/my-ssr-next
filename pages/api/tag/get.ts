@@ -11,7 +11,7 @@ async function get(req: NextApiRequest, res: NextApiResponse) {
   const session: ISession = req.session;
   const { userId = 0 } = session;
   const db = await prepareConnection();
-  const tagRepo = db.getRepository(Tag);
+  const tagRepo = await db.getRepository(Tag);
 
   const followTags = await tagRepo.find({
     relations: ['users'],

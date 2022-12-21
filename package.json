@@ -4,8 +4,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:qa": "NODE_ENV=test next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "node-dev": "node server.js",
+    "node-start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",

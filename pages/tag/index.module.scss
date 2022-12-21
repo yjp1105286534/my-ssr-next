@@ -1,13 +1,14 @@
 .tags {
   display: flex;
   justify-content: flex-start;
-
+  flex-wrap: wrap;
   .tagWrapper {
     width: 220px;
     height: 200px;
     border: 1px solid #f3f3f3;
     padding: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;

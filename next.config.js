@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  distDir: 'out',
   images: {
     domains: ['img1.mukewang.com'],
   },
