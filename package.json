@@ -6,6 +6,7 @@
     "build": "next build",
     "build:qa": "NODE_ENV=test next build",
     "start": "next start",
+    "start:qa": "NODE_ENV=test next start",
     "lint": "next lint",
     "node-dev": "node server.js",
     "node-start": "NODE_ENV=production node server.js"
